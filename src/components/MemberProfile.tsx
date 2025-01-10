@@ -6,7 +6,7 @@ const MemberProfile = async () => {
     return (
         <div className="px-4 flex items-center gap-2">
             <UserButton/>
-            <p>{ user?.emailAddresses[0].emailAddress }</p>
+            <p className="text-base-content">{ user?.emailAddresses[0].emailAddress }</p>
         </div>
     )
 }
