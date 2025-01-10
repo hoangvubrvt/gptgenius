@@ -18,4 +18,7 @@ export default {
     require("@tailwindcss/typography"),
     require("daisyui"),
   ],
+  daisyui: {
+    themes: ['winter', 'dracula']
+  }
 } satisfies Config;
