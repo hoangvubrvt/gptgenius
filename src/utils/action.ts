@@ -81,7 +81,7 @@ function replaceCitations(textData: { content: string; citations: string[] }): s
 
     textData.citations.forEach((citation, index) => {
         const citationMarker = `[${index + 1}]`;
-        const citationLink = `[[${index + 1}]](${citation})<!--rehype:target=_blank-->`;
+        const citationLink = `[[${index + 1}]](${citation})<!--rehype:target=_blank&class=text-blue-400 hover:text-blue-700 underline font-semibold-->`;
 
         updatedContent = updatedContent.replaceAll(citationMarker, citationLink);
     });
@@ -100,7 +100,6 @@ export const generateChatResponse = async (chatMessages: Message[]):Promise<Mess
             ...chatMessages
         ]
         const aiResponse = await promptPerplexityAI(messages);
-        console.log(JSON.stringify(aiResponse));
         const responseMessage = aiResponse.choices[0].message;
 
         const contentWithCitations = replaceCitations({

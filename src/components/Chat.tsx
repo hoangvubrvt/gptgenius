@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { generateChatResponse, Message } from "@/utils/action";
 import toast from "react-hot-toast";
@@ -24,8 +24,8 @@ const Chat = () => {
         }
     });
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = (formEvent: React.FormEvent<HTMLFormElement>) => {
+        formEvent.preventDefault();
         const query: Message = {
             role: 'user',
             content: text,

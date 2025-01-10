@@ -6,6 +6,12 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    'text-blue-400', // Add any Tailwind classes you use in rehype
+    'hover:text-blue-700',
+    'underline',
+    'font-semibold'
+  ],
   theme: {
     extend: {
       colors: {
