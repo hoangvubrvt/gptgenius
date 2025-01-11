@@ -2,6 +2,7 @@ import React from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import SideBar from "@/components/SideBar";
 
+
 const layout = ( {children}: {children: React.ReactNode} ) => {
     return (
         <div className="drawer lg:drawer-open">
