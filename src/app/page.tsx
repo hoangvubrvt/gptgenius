@@ -6,7 +6,7 @@ const HomePage = () => {
         <div className="hero-content text-center">
           <div className="max-w-md">
               <h1 className="text-6xl font-bold text-primary">SandmitGPT</h1>
-              <p className="py-6 text-lg leading-loose">
+              <p className="py-6 text-lg leading-loose text-base-content">
                   SandmitGPT is a cutting-edge AI tool that generates creative content using GPT-3.
               </p>
               <Link href="/chat" className="btn btn-secondary">GET STARTED</Link>
