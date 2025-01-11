@@ -33,7 +33,7 @@ const Chat = () => {
         mutate(query);
         setText('');
     }
-    console.log("messages: ", messages);
+    
     return (
         <div className="min-h-[calc(100vh-6rem)] grid grid-rows-[1fr,auto]">
             <div>
