@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "node build.mjs",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -32,7 +32,6 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "cross-env": "^7.0.3",
     "daisyui": "^4.12.23",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
