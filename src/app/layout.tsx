@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SandmitGPT",
-  description: "SandmitGPT - Generate creative content using GPT-3",
+  title: "GeniusGPT",
+  description: "GPTGenius - Generate creative content using GPT-3",
 };
 
 export default function RootLayout({
