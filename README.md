@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OpenAI Chatbox Web Application
 
-## Getting Started
+This project is a Proof of Concept (PoC) for building a web application that integrates an OpenAI-powered chatbox with user management services provided by Clerk.
 
-First, run the development server:
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+This project demonstrates the integration of OpenAI's language model capabilities into a web application, allowing users to interact with an AI-powered chatbox. The application also incorporates Clerk for user authentication and management, ensuring a secure and personalized user experience.
+
+## Features
+
+- **AI-Powered Chatbox**: Engage in conversations with an AI model powered by OpenAI.
+- **User Authentication**: Secure user login and registration using Clerk.
+- **User Management**: Manage user profiles and sessions with ease.
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/hoangvubrvt/gptgenius.git
+   cd gptgenius
+
+   ```
+2. **Install dependencies****:**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Set up environment variables**:
+   Create a **.env** file in the root directory and add your OpenAI and Clerk API keys:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+   CLERK_SECRET_KEY=your_clerk_secret_key
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+   PERPLEXITY_API_TOKEN=your_perplexity_api_token
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   Replace **your\_clerk\_publishable\_key**, **your\_clerk\_secret\_key**, and **your\_perplexity\_api\_token** with your actual API keys and tokens.
+4. **Run the application**
 
-## Learn More
+   ```
+   npm start
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Once the application is running, you can access it in your web browser at **http://localhost:3000**. Register or log in using Clerk, and start interacting with the AI chatbox.**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+**OpenAI**: For AI language model integration.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Clerk**: For user authentication and management.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Node.js**: Backend runtime environment.
+
+**React**: Frontend library for building user interfaces.
+
+## Contributing
+
+**Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.**
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
